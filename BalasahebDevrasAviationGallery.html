@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Balasaheb Devras Aviation Gallery | Pune</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Glassmorphism Classes */
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 10px; }
+
+        /* Animation States */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero Parallax Placeholder */
+        #hero-bg {
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Lightbox Style */
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+
+        /* Navigation Progress */
+        #scroll-progress {
+            height: 3px;
+            background: linear-gradient(to right, #0ea5e9, #38bdf8);
+            width: 0%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex flex-col group cursor-pointer">
+                <span class="text-white font-extrabold text-xl tracking-tight leading-none group-hover:text-sky-400 transition-colors">DR. BALASAHEB DEVRAS</span>
+                <span class="text-sky-400 text-[10px] font-bold tracking-[0.2em] mt-1">AVIATION GALLERY • PUNE</span>
+            </div>
+            
+            <!-- Desktop Links -->
+            <div class="hidden md:flex space-x-10 items-center">
+                <a href="#about" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-all relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-sky-400 hover:after:w-full after:transition-all">About</a>
+                <a href="#exhibits" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-all relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-sky-400 hover:after:w-full after:transition-all">Exhibits</a>
+                <a href="#gallery" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-all relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-sky-400 hover:after:w-full after:transition-all">Gallery</a>
+                <a href="#info" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-all relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-sky-400 hover:after:w-full after:transition-all">Visitor Info</a>
+                <a href="#info" class="bg-sky-600 hover:bg-sky-500 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-sky-900/40">Plan Visit</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-white p-2">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col space-y-4 md:hidden">
+            <a href="#about" class="text-slate-300 text-lg py-2">About</a>
+            <a href="#exhibits" class="text-slate-300 text-lg py-2">Exhibits</a>
+            <a href="#gallery" class="text-slate-300 text-lg py-2">Gallery</a>
+            <a href="#info" class="text-slate-300 text-lg py-2">Visitor Info</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950">
+        <!-- Parallax Background Image -->
+        <div id="hero-bg" class="absolute inset-0 z-0 scale-110 opacity-40">
+            <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover" alt="Hero Background">
+        </div>
+        
+        <!-- Hero Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/50 to-slate-950 z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-20">
+            <div class="inline-flex items-center space-x-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full mb-8 backdrop-blur-sm reveal">
+                <span class="flex h-2 w-2 rounded-full bg-sky-400 animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-widest text-sky-200">Open for Visitors Daily</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tight reveal">
+                Elevate Your <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">Curiosity.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-12 font-light reveal" style="transition-delay: 200ms;">
+                Witness the grandeur of aviation history at Pune's premier aerospace destination. Explore, learn, and be inspired by the magic of flight.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 reveal" style="transition-delay: 400ms;">
+                <a href="#info" class="bg-white text-slate-950 px-10 py-4 rounded-full font-extrabold text-lg hover:bg-sky-400 hover:text-white transition-all transform hover:-translate-y-1 shadow-2xl">
+                    Get Tickets
+                </a>
+                <a href="#exhibits" class="glass px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all">
+                    Explore Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="py-32 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <div class="w-16 h-1.5 bg-sky-600 mb-8 rounded-full"></div>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight">Discover the Evolution of the Skies.</h2>
+                        <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                            <p>Located in Shivajinagar, the <span class="text-slate-900 font-bold">Dr. Balasaheb Devras Aviation Gallery</span> is a curated journey through time. From the first paper sketches to supersonic titans, we celebrate human ingenuity.</p>
+                            <p>Our gallery isn't just a museum; it's an educational catalyst. We specialize in making complex aerodynamic concepts accessible to students through visual storytelling and precision scale models.</p>
+                        </div>
+                        
+                        <div class="mt-12 flex gap-8 border-t border-slate-100 pt-10">
+                            <div>
+                                <span class="block text-3xl font-black text-slate-900 leading-none">465+</span>
+                                <span class="text-sm text-slate-500 font-medium">Verified Reviews</span>
+                            </div>
+                            <div>
+                                <span class="block text-3xl font-black text-slate-900 leading-none">12k+</span>
+                                <span class="text-sm text-slate-500 font-medium">Yearly Visitors</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative reveal" style="transition-delay: 300ms;">
+                        <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover" alt="Museum Exhibit">
+                        </div>
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibits Section -->
+        <section id="exhibits" class="py-32 bg-slate-50 relative">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-20 reveal">
+                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">Gallery Highlights</h2>
+                    <p class="text-slate-500 max-w-xl mx-auto">Explore our world-class sections designed to ignite interest in aerospace science.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Exhibit Card -->
+                    <div class="group bg-white p-10 rounded-3xl border border-slate-200 hover:border-sky-400 hover:shadow-2xl hover:shadow-sky-100 transition-all duration-500 reveal">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-900 text-3xl mb-8 group-hover:bg-sky-600 group-hover:text-white transition-all duration-500">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Aero-Science</h3>
+                        <p class="text-slate-500 leading-relaxed mb-6">Interactive modules explaining the physics of lift, drag, and thrust through real-time demonstrations.</p>
+                        <a href="#" class="text-sky-600 font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="group bg-white p-10 rounded-3xl border border-slate-200 hover:border-sky-400 hover:shadow-2xl hover:shadow-sky-100 transition-all duration-500 reveal" style="transition-delay: 200ms;">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-900 text-3xl mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500">
+                            <i class="fas fa-helicopter"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Historical Fleet</h3>
+                        <p class="text-slate-500 leading-relaxed mb-6">From early bi-planes to vintage gliders, see the transition of design across decades.</p>
+                        <a href="#" class="text-indigo-600 font-bold flex items-center gap-2 group-hover:gap-4 transition-all">View Fleet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="group bg-white p-10 rounded-3xl border border-slate-200 hover:border-sky-400 hover:shadow-2xl hover:shadow-sky-100 transition-all duration-500 reveal" style="transition-delay: 400ms;">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-900 text-3xl mb-8 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-500">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Future Flight</h3>
+                        <p class="text-slate-500 leading-relaxed mb-6">Step into the future with space exploration modules and upcoming vertical flight tech.</p>
+                        <a href="#" class="text-emerald-600 font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section id="gallery" class="py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+                    <div>
+                        <h2 class="text-4xl font-black text-slate-900 mb-2 leading-none">Inside the Gallery</h2>
+                        <p class="text-slate-500">A visual walkthrough of our exhibits</p>
+                    </div>
+                    <div class="mt-6 md:mt-0 text-slate-400 text-sm italic">Click to focus</div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <div class="reveal overflow-hidden rounded-2xl cursor-pointer group h-64 md:h-80 col-span-2">
+                        <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1200" class="gallery-img w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Major Display">
+                    </div>
+                    <div class="reveal overflow-hidden rounded-2xl cursor-pointer group h-64 md:h-80" style="transition-delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?q=80&w=800" class="gallery-img w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Model Plane">
+                    </div>
+                    <div class="reveal overflow-hidden rounded-2xl cursor-pointer group h-64 md:h-80" style="transition-delay: 200ms;">
+                        <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=800" class="gallery-img w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Jet Close Up">
+                    </div>
+                    <div class="reveal overflow-hidden rounded-2xl cursor-pointer group h-64 md:h-80" style="transition-delay: 300ms;">
+                        <img src="https://images.unsplash.com/photo-1520437358207-35baf5979720?q=80&w=800" class="gallery-img w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Cockpit View">
+                    </div>
+                    <div class="reveal overflow-hidden rounded-2xl cursor-pointer group h-64 md:h-80 col-span-2" style="transition-delay: 400ms;">
+                        <img src="https://images.unsplash.com/photo-1464039397811-476f652a343b?q=80&w=1200" class="gallery-img w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Visitor Experience">
+                    </div>
+                    <div class="reveal overflow-hidden rounded-2xl cursor-pointer group h-64 md:h-80" style="transition-delay: 500ms;">
+                        <img src="https://images.unsplash.com/photo-1506912532102-9e4c29c9b277?q=80&w=800" class="gallery-img w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Science Section">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info & Map -->
+        <section id="info" class="py-32 bg-slate-900 text-white overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <h2 class="text-4xl md:text-5xl font-black mb-12">Visit the Gallery</h2>
+                        
+                        <div class="space-y-10">
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-sky-500 rounded-2xl flex items-center justify-center text-xl shrink-0"><i class="fas fa-map-marked-alt"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2 text-sky-400">Location</h4>
+                                    <p class="text-slate-400">Rokadoba Mandir, Gaothan, Shivajinagar, Pune, MH 411005 (Near PMC Metro)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-sky-500 rounded-2xl flex items-center justify-center text-xl shrink-0"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2 text-sky-400">Operational Hours</h4>
+                                    <p class="text-slate-400 text-xl font-medium">Daily: 10:00 AM – 9:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-sky-500 rounded-2xl flex items-center justify-center text-xl shrink-0"><i class="fas fa-ticket-alt"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2 text-sky-400">Entry & Contact</h4>
+                                    <p class="text-slate-400">Tickets available at venue. Group bookings: 08001222999</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal" style="transition-delay: 300ms;">
+                        <div class="bg-white/10 border border-white/20 rounded-3xl p-8 mb-8">
+                            <h4 class="font-bold text-lg mb-4 text-sky-400">Address</h4>
+                            <p class="text-slate-300 leading-relaxed">Rokadoba Mandir, Gaothan, Shivajinagar, Pune, MH 411005</p>
+                        </div>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-slate-500 py-20 px-4">
+        <div class="max-w-7xl mx-auto border-b border-white/5 pb-12 mb-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <span class="text-white font-black text-2xl">AVIATION GALLERY</span>
+                <p class="mt-2 text-sm">Where Pune's aviation dream begins.</p>
+            </div>
+            <div class="flex gap-6 text-xl">
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto text-center text-xs tracking-widest uppercase font-medium">
+            &copy; 2024 Dr. Balasaheb Devras Aviation Gallery. Crafted for enthusiasts.
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox">
+        <img id="lightbox-img" class="max-w-[90vw] max-h-[85vh] rounded-xl shadow-2xl transition-transform duration-300" src="" alt="Zoomed Exhibit">
+        <button class="absolute top-10 right-10 text-white text-4xl">&times;</button>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Navigation Progress Bar
+            const progressBar = document.getElementById('scroll-progress');
+            window.onscroll = () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                progressBar.style.width = scrolled + "%";
+                
+                // Header background switch
+                const nav = document.getElementById('main-nav');
+                if (winScroll > 50) {
+                    nav.classList.add('glass-dark', 'py-3');
+                    nav.classList.remove('py-4');
+                } else {
+                    nav.classList.remove('glass-dark', 'py-3');
+                    nav.classList.add('py-4');
+                }
+            };
+
+            // 2. Reveal on Scroll Logic
+            const observerOptions = {
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // 3. Mobile Menu Toggle
+            const menuBtn = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.onclick = () => {
+                mobileMenu.classList.toggle('hidden');
+                menuBtn.innerHTML = mobileMenu.classList.contains('hidden') 
+                    ? '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>'
+                    : '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+            };
+            
+            // Close mobile menu on link click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.onclick = () => mobileMenu.classList.add('hidden');
+            });
+
+            // 4. Hero Parallax Effect
+            const heroBg = document.getElementById('hero-bg');
+            window.addEventListener('mousemove', (e) => {
+                const moveX = (e.clientX - window.innerWidth / 2) * 0.015;
+                const moveY = (e.clientY - window.innerHeight / 2) * 0.015;
+                heroBg.style.transform = `scale(1.1) translate(${moveX}px, ${moveY}px)`;
+            });
+
+            // 5. Lightbox Logic
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            document.querySelectorAll('.gallery-img').forEach(img => {
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightbox.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            lightbox.onclick = () => {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            };
+
+            // Keyboard support for Lightbox
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
