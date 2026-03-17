@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil's Fitness Wave | High-Performance Gym Panaji</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .heading-font {
+            font-family: 'Oswald', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .wave-accent {
+            background: linear-gradient(90deg, #06b6d4, #3b82f6);
+        }
+        #mobile-menu {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .menu-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-[100] glass-nav py-5 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter uppercase relative z-50 italic">
+            Sunil's <span class="text-cyan-400">Fitness Wave</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em]">
+            <a href="#about" class="hover:text-cyan-400 transition">Evolution</a>
+            <a href="#sessions" class="hover:text-cyan-400 transition">Workouts</a>
+            <a href="#community" class="hover:text-cyan-400 transition">Vibe</a>
+            <a href="#location" class="hover:text-cyan-400 transition">Studio</a>
+        </div>
+
+        <div class="flex items-center space-x-4 relative z-50">
+            <a href="tel:07499240656" class="wave-accent text-white px-6 py-2.5 rounded-sm text-[10px] font-black uppercase tracking-widest hover:brightness-110 transition shadow-lg shadow-cyan-950">Get Started</a>
+            
+            <!-- Mobile Toggle -->
+            <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none" aria-label="Toggle Menu">
+                <span id="line1" class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+                <span id="line2" class="block w-6 h-0.5 bg-white transition-opacity duration-300"></span>
+                <span id="line3" class="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[90] bg-slate-950 translate-x-full md:hidden flex flex-col items-center justify-center space-y-10 text-xl font-bold uppercase tracking-[0.3em]">
+        <a href="#about" class="mobile-link hover:text-cyan-400 transition">Evolution</a>
+        <a href="#sessions" class="mobile-link hover:text-cyan-400 transition">Workouts</a>
+        <a href="#community" class="mobile-link hover:text-cyan-400 transition">Vibe</a>
+        <a href="#location" class="mobile-link hover:text-cyan-400 transition">Studio</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center text-center text-white hero-bg px-4 pt-20">
+        <div data-aos="fade-up" data-aos-duration="1200">
+            <h2 class="text-[10px] md:text-xs font-black uppercase tracking-[0.6em] mb-6 text-cyan-400">Ride the Wave of Transformation</h2>
+            <h1 class="heading-font text-5xl md:text-9xl mb-8 uppercase font-bold leading-[0.9] tracking-tighter">Beyond <br><span class="text-transparent border-b-4 border-cyan-500" style="-webkit-text-stroke: 1px white;">Conventional</span></h1>
+            <p class="max-w-2xl mx-auto text-sm md:text-lg mb-12 font-light text-slate-300 leading-relaxed px-4">
+                Step into Panaji's most motivating atmosphere. We don't just train; we evolve through unconventional variations and elite guidance.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-5 px-6">
+                <a href="#sessions" class="wave-accent px-12 py-5 rounded-sm transition uppercase text-[11px] font-black tracking-[0.2em] shadow-xl">View Workouts</a>
+                <a href="#location" class="border border-white/30 backdrop-blur-sm px-12 py-5 rounded-sm hover:bg-white hover:text-black transition uppercase text-[11px] font-black tracking-[0.2em]">Locate Studio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unconventional Section -->
+    <section id="about" class="py-24 md:py-40 px-6 md:px-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right" class="relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-cyan-500"></div>
+                <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Training" class="rounded-sm shadow-2xl w-full grayscale hover:grayscale-0 transition duration-700">
+                <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-cyan-500"></div>
+            </div>
+            <div data-aos="fade-left">
+                <span class="text-cyan-500 font-black uppercase tracking-[0.4em] text-[10px]">The SFW Methodology</span>
+                <h2 class="heading-font text-4xl md:text-6xl mt-6 mb-8 uppercase font-bold leading-tight">Daily Variations <br>Zero Plateaus</h2>
+                <p class="text-slate-400 text-sm md:text-lg leading-relaxed mb-8 font-light">
+                    Sunil’s Fitness Wave specializes in unconventional training methods that keep your body guessing. From beginners to seasoned enthusiasts, our setup is designed to uplift your vibe instantly.
+                </p>
+                <div class="grid grid-cols-2 gap-8 mb-10">
+                    <div>
+                        <p class="text-3xl font-black text-white heading-font">64+</p>
+                        <p class="text-[10px] uppercase tracking-widest text-cyan-500">5-Star Reviews</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-black text-white heading-font">Daily</p>
+                        <p class="text-[10px] uppercase tracking-widest text-cyan-500">Workout Variations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessions Grid -->
+    <section id="sessions" class="py-24 bg-slate-900 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center mb-20">
+            <h2 class="heading-font text-4xl md:text-5xl uppercase font-bold italic tracking-tighter">Elite Programming</h2>
+            <div class="h-1 w-24 wave-accent mx-auto mt-4"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 max-w-7xl mx-auto">
+            <!-- Program 1 -->
+            <div data-aos="zoom-in" data-aos-delay="100" class="group relative overflow-hidden aspect-[4/5] bg-slate-800 rounded-sm">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="heading-font text-2xl font-bold uppercase mb-2">Unconventional</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest">Strength & Mobility</p>
+                </div>
+            </div>
+            <!-- Program 2 -->
+            <div data-aos="zoom-in" data-aos-delay="200" class="group relative overflow-hidden aspect-[4/5] bg-slate-800 rounded-sm">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="heading-font text-2xl font-bold uppercase mb-2">Group Sessions</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest">High-Vibe Community</p>
+                </div>
+            </div>
+            <!-- Program 3 -->
+            <div data-aos="zoom-in" data-aos-delay="300" class="group relative overflow-hidden aspect-[4/5] bg-slate-800 rounded-sm">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Personal training session" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://picsum.photos/800/1000?grayscale';" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="heading-font text-2xl font-bold uppercase mb-2">Personal Training</h3>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest">Individual attention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Vibe -->
+    <section id="community" class="py-24 bg-slate-950 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-cyan-500 font-black uppercase tracking-[0.4em] text-[10px]">Real Results</span>
+                    <h2 class="heading-font text-4xl md:text-6xl uppercase font-bold mt-4 leading-none">The Wave Community</h2>
+                </div>
+                <div class="text-right">
+                    <p class="text-slate-500 text-sm italic">"The ambiance is motivating, and the group sessions are a highlight."</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="fade-up" class="bg-slate-900/50 p-10 rounded-sm border-l-2 border-cyan-500">
+                    <p class="text-slate-300 font-light leading-relaxed mb-8">"I'm amazed by the unconventional workouts and daily variations. Sunil's approach keeps things exciting and challenging, making each session unique."</p>
+                    <div class="font-black text-[11px] uppercase tracking-widest text-white">— Gitesh Sawant</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900/50 p-10 rounded-sm border-l-2 border-cyan-500">
+                    <p class="text-slate-300 font-light leading-relaxed mb-8">"Step inside the gym, and the vibe here will uplift you instantly. The atmosphere is so motivating that you end up having an amazing session."</p>
+                    <div class="font-black text-[11px] uppercase tracking-widest text-white">— Rushikesh Korgaonkar</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-900/50 p-10 rounded-sm border-l-2 border-cyan-500">
+                    <p class="text-slate-300 font-light leading-relaxed mb-8">"Excellent place to workout whether you are a beginner or a seasoned enthusiast. Wonderful setup and excellent dedicated trainers."</p>
+                    <div class="font-black text-[11px] uppercase tracking-widest text-white">— Sharleen Gomes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Location -->
+    <section id="location" class="py-24 bg-zinc-900 text-white px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="heading-font text-5xl md:text-7xl mb-12 uppercase font-bold italic tracking-tighter">7th Floor <br><span class="text-cyan-500">Penthouse Studio</span></h2>
+                <div class="space-y-10">
+                    <div class="flex items-start space-x-6">
+                        <div class="wave-accent p-3 rounded-sm shrink-0 shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-black uppercase text-xs tracking-widest mb-2 text-cyan-500">Base of Operations</p>
+                            <p class="text-zinc-400 text-sm leading-relaxed font-light">Annex, Caculo Mall, 7th Floor, Dojo De Goa,<br>St Inez Rd, Panaji, Goa 403001</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <div class="wave-accent p-3 rounded-sm shrink-0 shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-black uppercase text-xs tracking-widest mb-2 text-cyan-500">Operation Window</p>
+                            <p class="text-zinc-400 text-sm font-light">Mon — Sat: 6:00 AM - 12:00 PM<br>Reopens: 4:00 PM - 8:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <a href="tel:07499240656" class="text-2xl heading-font font-bold hover:text-cyan-500 transition border-b-2 border-cyan-500 pb-1">+91 74992 40656</a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="bg-zinc-800 p-1 rounded-sm overflow-hidden shadow-2xl h-[400px] md:h-[500px]">
+                <div class="w-full h-full bg-zinc-700 flex items-center justify-center relative group">
+                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Studio View" class="absolute inset-0 w-full h-full object-cover grayscale opacity-20">
+                    <div class="text-center z-10 px-8">
+                        <p class="mb-6 font-bold uppercase tracking-[0.3em] text-xs">Caculo Mall • 7th Floor</p>
+                        <a href="https://www.google.com/maps/dir//Sunil's+Fitness+Wave+Annex,+Caculo+Mall,+7th+Floor+,+Dojo+De+Goa,+St+Inez+Rd,+Panaji,+Goa+403001" target="_blank" class="bg-white text-black px-12 py-4 rounded-sm font-black uppercase text-[10px] tracking-widest inline-block hover:bg-cyan-500 hover:text-white transition duration-300">Open Map Navigation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-black text-zinc-700 text-center px-6">
+        <div class="mb-8 font-black uppercase tracking-[0.5em] text-white">SFW</div>
+        <p class="text-[9px] uppercase tracking-[0.4em] leading-loose max-w-sm mx-auto">
+            &copy; 2024 Sunil's Fitness Wave. Panaji, Goa.<br>
+            Unconventional Excellence.
+        </p>
+    </footer>
+
+    <script>
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+        const line1 = document.getElementById('line1');
+        const line2 = document.getElementById('line2');
+        const line3 = document.getElementById('line3');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            const isOpen = mobileMenu.classList.contains('translate-x-0');
+            
+            if (isOpen) {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+                line1.classList.remove('rotate-45', 'translate-y-2');
+                line2.classList.remove('opacity-0');
+                line3.classList.remove('-rotate-45', '-translate-y-2');
+                body.classList.remove('menu-open');
+            } else {
+                mobileMenu.classList.remove('translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+                line1.classList.add('rotate-45', 'translate-y-2');
+                line2.classList.add('opacity-0');
+                line3.classList.add('-rotate-45', '-translate-y-2');
+                body.classList.add('menu-open');
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Initialize Animations
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
