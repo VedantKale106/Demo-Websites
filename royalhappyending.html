@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Spa | Ultra-Luxury Wellness Goa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+        }
+        body { font-family: 'Montserrat', sans-serif; background-color: #faf9f6; }
+        h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(26,26,26,0.4) 0%, rgba(26,26,26,0.8) 100%);
+        }
+        
+        .gold-underline {
+            position: relative;
+            display: inline-block;
+        }
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 50px;
+            height: 1px;
+            background: var(--gold);
+            transform: translateX(-50%);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="text-stone-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-lg border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="serif text-2xl font-semibold tracking-[0.2em] leading-none text-stone-800">THE ROYAL</span>
+                <span class="text-[10px] tracking-[0.5em] text-amber-600 mt-1 uppercase">Wellness & Spa</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-12 text-[11px] uppercase tracking-[0.2em] font-medium text-stone-500">
+                <a href="#about" class="hover:text-amber-600 transition-colors">The Experience</a>
+                <a href="#services" class="hover:text-amber-600 transition-colors">Treatments</a>
+                <a href="#contact" class="hover:text-amber-600 transition-colors">Location</a>
+            </div>
+
+            <a href="tel:08983438919" class="group relative px-6 py-3 overflow-hidden border border-stone-800 text-[11px] uppercase tracking-widest transition-all">
+                <span class="relative z-10 group-hover:text-white transition-colors">Book Appointment</span>
+                <div class="absolute inset-0 bg-stone-800 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=2070" 
+                 alt="Spa Ambiance" class="w-full h-full object-cover scale-105 animate-[subtleZoom_20s_infinite]">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6">
+            <span class="text-white/80 text-xs uppercase tracking-[0.6em] mb-4 block animate-pulse">Rejuvenate in Calangute</span>
+            <h1 class="text-6xl md:text-8xl text-white mb-8 serif italic font-light">The Art of <br><span class="not-italic font-bold">Stillness</span></h1>
+            <div class="flex justify-center gap-6">
+                <a href="#services" class="bg-amber-600 text-white px-10 py-4 text-[10px] uppercase tracking-[0.3em] hover:bg-amber-700 transition-all shadow-xl">View Rituals</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 bg-[#faf9f6]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl mb-10 serif italic gold-underline">Your Private Sanctuary</h2>
+            <p class="text-stone-500 font-light leading-relaxed text-xl mb-16 italic">
+                "We believe that luxury is not just a service, but a state of mind. Located in the heart of North Goa, we provide a curated escape for those seeking absolute tranquility."
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group">
+                    <div class="text-amber-600 mb-4 text-2xl">01</div>
+                    <h3 class="serif text-xl mb-2 group-hover:text-amber-700 transition">Master Therapists</h3>
+                    <p class="text-xs text-stone-400 uppercase tracking-widest leading-loose">Artisans of touch and ancient healing arts.</p>
+                </div>
+                <div class="group">
+                    <div class="text-amber-600 mb-4 text-2xl">02</div>
+                    <h3 class="serif text-xl mb-2 group-hover:text-amber-700 transition">Sensory Design</h3>
+                    <p class="text-xs text-stone-400 uppercase tracking-widest leading-loose">Climate controlled, acoustic dampened suites.</p>
+                </div>
+                <div class="group">
+                    <div class="text-amber-600 mb-4 text-2xl">03</div>
+                    <h3 class="serif text-xl mb-2 group-hover:text-amber-700 transition">Seamless Flow</h3>
+                    <p class="text-xs text-stone-400 uppercase tracking-widest leading-loose">Available 24/7 to match your inner rhythm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-amber-600 text-[10px] uppercase tracking-[0.4em] mb-4 block">The Menu</span>
+                    <h2 class="text-5xl serif">Signature Rituals</h2>
+                </div>
+                <p class="text-stone-400 text-sm italic">All sessions include organic oils and steam therapy.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div class="service-card group flex flex-col gap-6">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80&w=1200" 
+                             class="w-full h-80 object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105">
+                    </div>
+                    <div class="flex justify-between items-start border-b border-stone-100 pb-6">
+                        <div>
+                            <h3 class="text-2xl serif mb-2">Deep Tissue Release</h3>
+                            <p class="text-stone-500 text-sm font-light">Intense therapeutic pressure for chronic muscle tension.</p>
+                        </div>
+                        <span class="serif text-xl text-amber-700">₹1,500+</span>
+                    </div>
+                </div>
+
+                <div class="service-card group flex flex-col gap-6">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1200" 
+                             class="w-full h-80 object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105">
+                    </div>
+                    <div class="flex justify-between items-start border-b border-stone-100 pb-6">
+                        <div>
+                            <h3 class="text-2xl serif mb-2">Aromatic Soul Journey</h3>
+                            <p class="text-stone-500 text-sm font-light">A sensory blend of essential oils and rhythmic strokes.</p>
+                        </div>
+                        <span class="serif text-xl text-amber-700">₹2,000+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-stone-900 py-32 px-6 text-stone-300">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+            <div>
+                <h2 class="text-5xl text-white serif mb-12">Connect With Us</h2>
+                <div class="space-y-12">
+                    <div>
+                        <h4 class="text-[10px] uppercase tracking-[0.4em] text-amber-600 mb-4">Location</h4>
+                        <p class="text-xl serif italic">Shop No 3, Naika Vaddo,<br>Near Domino's, Calangute, Goa</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[10px] uppercase tracking-[0.4em] text-amber-600 mb-4">Direct Line</h4>
+                        <a href="tel:08983438919" class="text-3xl text-white hover:text-amber-500 transition-colors">089834 38919</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-stone-800/50 p-12 backdrop-blur-sm border border-white/5">
+                <h3 class="text-2xl text-white serif mb-8">Request a Callback</h3>
+                <form class="space-y-6">
+                    <div class="border-b border-stone-600 py-2">
+                        <input type="text" placeholder="Name" class="w-full bg-transparent border-none p-0 focus:ring-0 placeholder:text-stone-600 text-sm uppercase tracking-widest">
+                    </div>
+                    <div class="border-b border-stone-600 py-2">
+                        <input type="tel" placeholder="Mobile Number" class="w-full bg-transparent border-none p-0 focus:ring-0 placeholder:text-stone-600 text-sm uppercase tracking-widest">
+                    </div>
+                    <button class="w-full bg-white text-stone-900 py-5 text-[10px] uppercase tracking-[0.4em] font-bold hover:bg-amber-600 hover:text-white transition-all">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-stone-950 text-stone-600 text-center">
+        <div class="max-w-6xl mx-auto px-6 border-t border-white/5 pt-12">
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4">The Royal Spa Goa &copy; 2024</p>
+            <p class="text-[9px] uppercase tracking-[0.2em] opacity-50">Inclusive & LGBTQ+ Friendly Space</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth reveal animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
