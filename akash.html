@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Misal House & Pure Veg Restaurant | Rajgurunagar</title>
+    <meta name="description" content="Akash Misal House & Pure Veg Restaurant located near Khed Ghat, National Highway 50. Famous for Akash Special Cheese Misal, authentic South Indian dishes, and Jalebi Rabdi.">
+    <meta name="keywords" content="Akash Misal House, Pure Veg Restaurant, Misal Pav, South Indian Food, Rajgurunagar, Khed Ghat, NH50, Highway Restaurant, EV Charging">
+    <meta name="author" content="Akash Misal House">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Akash Misal House & Pure Veg Restaurant">
+    <meta property="og:description" content="Authentic Maharashtrian Misal and South Indian delicacies near Khed Ghat. Rated 4.4 stars by over 16,000 customers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.akashmisalhouse.com/">
+    
+    <!-- Google Fonts: Playfair Display for a classy look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c', // Primary Brand Color
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        },
+                        dark: {
+                            800: '#1f2937',
+                            900: '#111827',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles for specific fine-tuning -->
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #374151;
+        }
+
+        /* Hide scrollbar for gallery and horizontal scrolls but keep functionality */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Subtle reveal animation classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Image hover zoom utility */
+        .img-zoom-container {
+            overflow: hidden;
+        }
+        .img-zoom {
+            transition: transform 0.6s ease;
+        }
+        .img-zoom-container:hover .img-zoom {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- ==========================================
+         TOP NOTIFICATION BAR
+    =========================================== -->
+    <div class="bg-brand-800 text-white py-2 text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4 text-brand-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Open Today: 6:00 AM - 11:30 PM</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4 text-brand-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span>092708 04325</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-brand-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span>Near Khed Ghat, NH 50, Rajgurunagar</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MAIN NAVIGATION
+    =========================================== -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <!-- Logo & Brand Name -->
+                <div class="flex items-center">
+                    <a href="#" class="flex flex-col justify-center">
+                        <span class="text-2xl font-bold text-dark-900 tracking-tight">Akash Misal House</span>
+                        <span class="text-xs font-medium text-gray-500 uppercase tracking-widest mt-0.5">Pure Veg Restaurant</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-600 hover:text-brand-700 font-medium transition-colors">About Us</a>
+                    <a href="#menu" class="text-gray-600 hover:text-brand-700 font-medium transition-colors">Our Menu</a>
+                    <a href="#features" class="text-gray-600 hover:text-brand-700 font-medium transition-colors">Features</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-brand-700 font-medium transition-colors">Reviews</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-brand-700 font-medium transition-colors">Gallery</a>
+                    <a href="#contact" class="bg-brand-700 text-white px-5 py-2.5 rounded-md font-medium hover:bg-brand-800 transition-colors shadow-sm">
+                        Visit Us
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="text-gray-600 hover:text-brand-700 focus:outline-none" aria-label="Toggle menu">
+                        <svg class="h-6 w-6" id="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="h-6 w-6 hidden" id="close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden bg-white border-t border-gray-100 absolute w-full shadow-lg" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-gray-50 rounded-md">About Us</a>
+                <a href="#menu" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-gray-50 rounded-md">Our Menu</a>
+                <a href="#features" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-gray-50 rounded-md">Features</a>
+                <a href="#reviews" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-gray-50 rounded-md">Reviews</a>
+                <a href="#gallery" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-gray-50 rounded-md">Gallery</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-brand-700 bg-brand-50 hover:bg-brand-100 rounded-md mt-4">Visit Us / Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+    <section class="relative bg-dark-900 h-[80vh] min-h-[600px] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+                 alt="Restaurant ambiance" 
+                 class="w-full h-full object-cover object-center opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-700/20 text-brand-300 backdrop-blur-sm border border-brand-500/30 text-sm font-semibold tracking-wide uppercase mb-4">
+                    Authentic Maharashtrian & South Indian
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+                    Akash Misal House
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-gray-300 font-medium mb-6 font-serif">
+                    आकाश मिसळ हाउस & प्युअर व्हेज रेस्टॉरंट
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+                    Experience the finest, authentic vegetarian cuisine on National Highway 50. Famous for our signature cheese misal, crisp dosas, and warm hospitality near the scenic Khed Ghat.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#menu" class="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-md text-white bg-brand-700 hover:bg-brand-600 transition-colors shadow-lg hover:shadow-xl">
+                        Explore Our Menu
+                    </a>
+                    <a href="#directions" class="inline-flex justify-center items-center px-8 py-3.5 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-dark-900 transition-colors">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         QUICK STATS / INFO STRIP
+    =========================================== -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-100 py-6">
+                <!-- Stat 1: Rating -->
+                <div class="flex flex-col items-center justify-center p-4 text-center">
+                    <div class="flex items-center text-yellow-400 mb-1">
+                        <span class="text-2xl font-bold text-dark-900 mr-2">4.4</span>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <span class="text-sm text-gray-500 font-medium">16,686+ Google Reviews</span>
+                </div>
+                
+                <!-- Stat 2: Price Range -->
+                <div class="flex flex-col items-center justify-center p-4 text-center">
+                    <span class="text-2xl font-bold text-dark-900 mb-1">₹200–400</span>
+                    <span class="text-sm text-gray-500 font-medium">Average per person</span>
+                </div>
+                
+                <!-- Stat 3: Hours -->
+                <div class="flex flex-col items-center justify-center p-4 text-center">
+                    <span class="text-lg font-bold text-green-600 mb-1">Open Daily</span>
+                    <span class="text-sm text-gray-500 font-medium">6:00 AM - 11:30 PM</span>
+                </div>
+                
+                <!-- Stat 4: Type -->
+                <div class="flex flex-col items-center justify-center p-4 text-center">
+                    <div class="flex items-center mb-1">
+                        <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                        <span class="text-lg font-bold text-dark-900">Pure Veg</span>
+                    </div>
+                    <span class="text-sm text-gray-500 font-medium">Dine-in & Drive-through</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         ABOUT SECTION
+    =========================================== -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center reveal">
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-brand-700 font-semibold tracking-wide uppercase text-sm mb-2">Our Story</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-900 mb-6 leading-tight">
+                        A Culinary Landmark Near Khed Ghat
+                    </h2>
+                    <div class="space-y-5 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            Strategically located on National Highway 50 in Rajgurunagar, Akash Misal House has established itself as a premier destination for travelers and locals alike. We are committed to serving the highest quality vegetarian cuisine in a clean, welcoming environment.
+                        </p>
+                        <p>
+                            Whether you are stopping by for an early morning breakfast of hot Kande Pohe, indulging in our famous Akash Special Cheese Misal for lunch, or enjoying authentic South Indian delicacies, our kitchen prioritizes fresh ingredients and authentic Maharashtrian spices.
+                        </p>
+                        <p>
+                            Beyond great food, we understand the needs of modern travelers. Our facility features ample parking, exceptionally clean washrooms, and dedicated EV charging stations, ensuring a comfortable rest stop for your journey.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-gray-100 flex items-center space-x-6">
+                        <div class="flex -space-x-4">
+                            <img class="w-12 h-12 rounded-full border-2 border-white shadow-sm" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Customer avatar" loading="lazy">
+                            <img class="w-12 h-12 rounded-full border-2 border-white shadow-sm" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Customer avatar" loading="lazy">
+                            <img class="w-12 h-12 rounded-full border-2 border-white shadow-sm" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Customer avatar" loading="lazy">
+                            <div class="w-12 h-12 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600 shadow-sm">+16k</div>
+                        </div>
+                        <div class="text-sm">
+                            <p class="font-medium text-dark-900">Trusted by thousands</p>
+                            <p class="text-gray-500">Read our reviews below</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Gallery Grid -->
+                <div class="order-1 lg:order-2 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="img-zoom-container rounded-lg shadow-md aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant interior" class="img-zoom w-full h-full object-cover rounded-lg" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="img-zoom-container rounded-lg shadow-md aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Authentic Indian Food" class="img-zoom w-full h-full object-cover rounded-lg" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURES / WHY CHOOSE US
+    =========================================== -->
+    <section id="features" class="py-20 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brand-700 font-semibold tracking-wide uppercase text-sm mb-2">Our Amenities</h3>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-900 mb-4">Everything You Need for a Perfect Halt</h2>
+                <p class="text-lg text-gray-600">We take pride in offering not just exceptional food, but exceptional facilities to make your highway journey comfortable and stress-free.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-card transition-shadow duration-300 reveal">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">Fast & Polite Service</h3>
+                    <p class="text-gray-600 leading-relaxed">Our trained staff ensures your orders are served quickly without compromising on quality or hospitality. Perfect for travelers tight on time.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-card transition-shadow duration-300 reveal">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">Ample Parking</h3>
+                    <p class="text-gray-600 leading-relaxed">A massive, secure parking area capable of accommodating cars, buses, and heavy vehicles safely away from the highway traffic.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-card transition-shadow duration-300 reveal">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">EV Charging Station</h3>
+                    <p class="text-gray-600 leading-relaxed">Future-ready facilities including dedicated electric vehicle charging stations so you can power up your car while you power up yourself.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-card transition-shadow duration-300 reveal">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">Clean Washrooms</h3>
+                    <p class="text-gray-600 leading-relaxed">We maintain the highest standards of hygiene. Our spacious and continuously cleaned restrooms are highly appreciated by all our guests.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-card transition-shadow duration-300 reveal">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">Extended Hours</h3>
+                    <p class="text-gray-600 leading-relaxed">Open early at 6:00 AM and closing late at 11:30 PM, making us the reliable choice for early risers and late-night highway cruisers.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-soft border border-gray-100 hover:shadow-card transition-shadow duration-300 reveal">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-3">Spacious Ambiance</h3>
+                    <p class="text-gray-600 leading-relaxed">A massive dine-in area that is well-ventilated, well-lit, and designed to comfortably accommodate large families and tour groups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         MENU SECTION
+    =========================================== -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brand-700 font-semibold tracking-wide uppercase text-sm mb-2">Discover Our Flavors</h3>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-900 mb-4">Popular Menu Highlights</h2>
+                <p class="text-lg text-gray-600">From our signature Misal to authentic South Indian classics, every dish is prepared with fresh ingredients and traditional recipes.</p>
+            </div>
+
+            <!-- Menu Category 1: Maharashtrian Specials -->
+            <div class="mb-16 reveal">
+                <div class="flex items-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark-900">Maharashtrian Specials</h3>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Akash Special Cheese Misal" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Akash Special Cheese Misal</h4>
+                                <span class="inline-block bg-brand-50 text-brand-700 text-xs px-2 py-1 rounded font-semibold whitespace-nowrap">Popular</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Our signature spicy sprouted moth bean curry topped with farsan, onions, coriander, and generous grated cheese. Served with pav.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Kothimbir Vadi" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Kothimbir Vadi</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Crispy, savory cakes made from fresh coriander leaves, chickpea flour, and traditional spices. A perfect starter.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Kande Pohe" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Kande Pohe</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Classic Maharashtrian breakfast of flattened rice roasted with onions, mustard seeds, turmeric, and peanuts. Light and flavourful.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Chura Masala Papad" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Chura Masala Papad</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Roasted papad crushed and mixed with finely chopped onions, tomatoes, coriander, and chat masala.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Category 2: South Indian -->
+            <div class="mb-16 reveal">
+                <div class="flex items-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark-900">South Indian Classics</h3>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Masala Dosa" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Masala Dosa</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Thin, crisp rice and lentil crepe stuffed with a spiced potato mash. Served with fresh coconut chutney and hot sambar.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Cheese Dosa" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Cheese Dosa</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">A fusion twist on the classic plain dosa, cooked to perfection and loaded with melted cheddar cheese.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Idli Sambar" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Idli Sambar</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Soft, fluffy steamed rice cakes served submerged in a bowl of hot, flavorful lentil vegetable stew.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Uttapam" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Mixed Veg Uttapam</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Thick, savory pancake made from dosa batter, topped with finely diced onions, tomatoes, chilies, and coriander.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Category 3: Sweets & Beverages -->
+            <div class="reveal">
+                <div class="flex items-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark-900">Sweets & Beverages</h3>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1605197136367-1726a6c221e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Jalebi Rabdi" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Jalebi Rabdi</h4>
+                                <span class="inline-block bg-brand-50 text-brand-700 text-xs px-2 py-1 rounded font-semibold whitespace-nowrap">Special</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Hot, crispy jalebis dipped in saffron syrup, served with thick, creamy chilled rabdi. The perfect contrast.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Item -->
+                    <div class="flex gap-4 p-4 border border-gray-100 rounded-xl hover:shadow-md transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220afa1?auto=format&fit=crop&w=200&q=80" alt="Special Tea" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" loading="lazy">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="text-lg font-bold text-dark-900">Special Masala Tea</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 mb-2 line-clamp-2">Strong Indian tea brewed fresh with milk, cardamom, ginger, and our secret mix of spices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 reveal">
+                <p class="text-gray-500 text-sm mb-6">Also available: Tandoor Roti, Vada, various Thalis, Fresh Juices, and Buttermilk.</p>
+                <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 border border-brand-700 text-base font-medium rounded-md text-brand-700 bg-transparent hover:bg-brand-50 transition-colors">
+                    Contact for Bulk Orders
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY SECTION
+    =========================================== -->
+    <section id="gallery" class="py-20 bg-dark-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brand-400 font-semibold tracking-wide uppercase text-sm mb-2">Visual Tour</h3>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Inside Akash Misal House</h2>
+                <p class="text-lg text-gray-400">Take a look at our clean ambiance, extensive seating, and mouth-watering dishes before your visit.</p>
+            </div>
+
+            <!-- CSS Grid Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 reveal">
+                <!-- Gallery Item 1 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant Vibe" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="South Indian Plate" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Crispy Snacks" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dining Area" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800 hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1605197136367-1726a6c221e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sweets Display" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800 hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220afa1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fresh Tea" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800 hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dosa Serving" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="aspect-square overflow-hidden rounded-lg img-zoom-container bg-dark-800 hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Misal Curry" class="img-zoom w-full h-full object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS / REVIEWS
+    =========================================== -->
+    <section id="reviews" class="py-20 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+                <div class="max-w-2xl">
+                    <h3 class="text-brand-700 font-semibold tracking-wide uppercase text-sm mb-2">Customer Feedback</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-900 mb-4">What Our Guests Say</h2>
+                    <p class="text-lg text-gray-600">Rated 4.4 out of 5 based on over 16,686 reviews on Google Maps.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="#" class="text-brand-700 font-semibold hover:text-brand-800 flex items-center">
+                        View all reviews
+                        <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-xl mr-4">
+                            R
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-900">Rahul Vaidya</h4>
+                            <div class="flex text-yellow-400 text-sm mt-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-xs text-gray-500">Local Guide · 1 month ago</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">
+                        "I recently visited Akash missal while travelling from Pune to Nashik and it was a wonderful experience. The missal was extremely tasty - exactly what a great misal should be. Excellent stop on the highway."
+                    </p>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-700 font-bold text-xl mr-4">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-900">Shivaji Deshmukh</h4>
+                            <div class="flex text-yellow-400 text-sm mt-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-xs text-gray-500">Local Guide · 2 months ago</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">
+                        "Recently visited Akash Misal House. The ambiance is surprisingly great, very clean, spacious and very welcoming. The food is absolutely delicious, especially the South Indian dishes like masala dosa."
+                    </p>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-brand-700 font-bold text-xl mr-4">
+                            B
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-900">Bishwajeet Kumar</h4>
+                            <div class="flex text-yellow-400 text-sm mt-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <span class="text-xs text-gray-500">Local Guide · 3 months ago</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">
+                        "During our visit to Pune, we stopped at this highly rated place we found on Google Maps. Appreciation for starters, buttermilk, ambience, facilities, and service efficiency. EV charging acknowledged sincerely."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT / VISIT US
+    =========================================== -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 reveal">
+                
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-brand-700 font-semibold tracking-wide uppercase text-sm mb-2">Plan Your Visit</h3>
+                    <h2 class="text-3xl font-bold text-dark-900 mb-6">We Look Forward To Serving You</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Whether you are passing through the scenic Khed Ghat or making a dedicated trip for our renowned Misal, we are ready to provide an exceptional dining experience. Get in touch with us for large group bookings or any inquiries.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-dark-900">Location</h4>
+                                <p class="text-gray-600 mt-1">Near Khed Ghat, National Highway 50,<br>Rajgurunagar, Maharashtra 410505</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-dark-900">Phone</h4>
+                                <p class="text-gray-600 mt-1">092708 04325</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-dark-900">Opening Hours</h4>
+                                <p class="text-gray-600 mt-1">Monday - Sunday<br>6:00 AM - 11:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Box -->
+                <div class="bg-white p-8 rounded-xl shadow-card border border-gray-100">
+                    <h3 class="text-2xl font-bold text-dark-900 mb-6">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors" placeholder="Mobile Number">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors">
+                                <option value="general">General Inquiry</option>
+                                <option value="bulk">Bulk / Tour Booking</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-700 text-white font-medium py-3 px-4 rounded-md hover:bg-brand-800 transition-colors shadow-sm">
+                            Send Message
+                        </button>
+                        <p id="form-status" class="text-sm text-center hidden font-medium mt-3"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8 border-t border-dark-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-1">
+                    <span class="text-2xl font-bold text-white tracking-tight block mb-1">Akash Misal House</span>
+                    <span class="text-xs font-medium text-gray-400 uppercase tracking-widest block mb-6">Pure Veg Restaurant</span>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Serving authentic Maharashtrian and South Indian cuisine on National Highway 50. Clean, delicious, and perfectly suited for your highway journeys.
+                    </p>
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-gray-200">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#menu" class="text-sm text-gray-400 hover:text-white transition-colors">Our Menu</a></li>
+                        <li><a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors">Facilities & Amenities</a></li>
+                        <li><a href="#reviews" class="text-sm text-gray-400 hover:text-white transition-colors">Customer Reviews</a></li>
+                        <li><a href="#gallery" class="text-sm text-gray-400 hover:text-white transition-colors">Photo Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Operating Hours -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-gray-200">Operating Hours</h4>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between text-sm text-gray-400 border-b border-dark-800 pb-2">
+                            <span>Monday - Friday</span>
+                            <span class="font-medium text-gray-300">6:00 AM - 11:30 PM</span>
+                        </li>
+                        <li class="flex justify-between text-sm text-gray-400 border-b border-dark-800 pb-2">
+                            <span>Saturday</span>
+                            <span class="font-medium text-gray-300">6:00 AM - 11:30 PM</span>
+                        </li>
+                        <li class="flex justify-between text-sm text-gray-400 pb-2">
+                            <span>Sunday</span>
+                            <span class="font-medium text-brand-400">6:00 AM - 11:30 PM</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-gray-500 mt-4 italic">* Open on all major public holidays</p>
+                </div>
+
+                <!-- Address & Map -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-gray-200">Find Us</h4>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                        Near Khed Ghat, National Highway 50,<br>
+                        Rajgurunagar, Maharashtra 410505
+                    </p>
+                    <a href="https://maps.google.com/?q=Akash+Misal+House+Rajgurunagar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        Get Directions on Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-dark-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500 mb-4 md:mb-0">
+                    &copy; 2026 Akash Misal House & Pure Veg Restaurant. All rights reserved.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         JAVASCRIPT LOGIC
+    =========================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Mobile Menu Toggle Logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+
+            // Close mobile menu when a link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+
+            // 2. Sticky Header shadow toggling
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    header.classList.add('shadow-md');
+                    header.classList.remove('shadow-sm');
+                } else {
+                    header.classList.add('shadow-sm');
+                    header.classList.remove('shadow-md');
+                }
+            });
+
+            // 3. Smooth Scrolling for anchor links (fallback to CSS scroll-behavior: smooth)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        const headerOffset = 80; // Height of the fixed header
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            // 4. Scroll Reveal Animation Logic (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: Stop observing once revealed
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const revealOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            };
+
+            const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
+            
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
+            });
+
+            // 5. Contact Form Submission Handling (Prevent Default)
+            const contactForm = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Simple UI feedback for submission
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const originalBtnText = submitBtn.innerText;
+                    
+                    submitBtn.innerText = 'Sending...';
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+                    // Simulate API Call / Delay
+                    setTimeout(() => {
+                        contactForm.reset();
+                        submitBtn.innerText = originalBtnText;
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                        
+                        formStatus.innerText = "Thank you! Your message has been sent successfully.";
+                        formStatus.className = "text-sm text-center font-medium mt-3 text-green-600 block";
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            formStatus.classList.add('hidden');
+                            formStatus.classList.remove('block');
+                        }, 5000);
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
