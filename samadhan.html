@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel New Samadhan | Pure Veg Restaurant & Lodge, Manchar</title>
+    <meta name="description" content="Authentic Pure Veg dining and comfortable lodging at Hotel New Samadhan, Manchar. Located on Pune-Nashik Hwy. Affordable stays starting at ₹1,366.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Montserrat', sans-serif; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .veg-green { color: #2D5A27; }
+        .bg-veg-green { background-color: #2D5A27; }
+        .accent-saffron { color: #F4A261; }
+        .bg-saffron { background-color: #F4A261; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-on-scroll { opacity: 0; }
+        .fade-in { animation: fadeIn 1s ease-out forwards; opacity: 1; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 px-6 py-4 bg-white/90 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-veg-green rounded-full flex items-center justify-center">
+                    <i data-lucide="leaf" class="text-white w-6 h-6"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold leading-none tracking-tight">NEW SAMADHAN</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-semibold veg-green">Pure Veg & Lodge</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wider">
+                <a href="#home" class="hover:veg-green transition">Home</a>
+                <a href="#restaurant" class="hover:veg-green transition">Dining</a>
+                <a href="#rooms" class="hover:veg-green transition">Stay</a>
+                <a href="#amenities" class="hover:veg-green transition">Services</a>
+                <a href="#contact" class="hover:veg-green transition">Find Us</a>
+            </div>
+            <a href="tel:08104000000" class="bg-veg-green text-white px-6 py-2 rounded font-bold hover:bg-green-900 transition flex items-center space-x-2">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                <span>Call Now</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section h-[90vh] flex items-center justify-center text-center px-4">
+        <div class="fade-in max-w-4xl text-white">
+            <div class="inline-block border-2 border-white/40 backdrop-blur-sm px-6 py-2 rounded-full mb-6">
+                <span class="text-sm font-semibold tracking-widest uppercase flex items-center gap-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Authentic Vegetarian Hospitality
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Comfortable Stay, <br><span class="accent-saffron">Delicious Soul Food.</span></h1>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light">
+                Welcome to Manchar's favorite destination for Pure Veg delicacies and relaxing lodge stays. Experience the warmth of tradition on the Pune-Nashik Highway.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#restaurant" class="bg-saffron text-white px-10 py-4 rounded font-bold hover:scale-105 transition shadow-lg">Our Restaurant</a>
+                <a href="#rooms" class="bg-white text-slate-900 px-10 py-4 rounded font-bold hover:bg-slate-100 transition shadow-lg">Book a Room</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Quick Info -->
+    <div class="max-w-6xl mx-auto -mt-12 relative z-10 px-4">
+        <div class="bg-white rounded-xl shadow-2xl p-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Stay Price</p>
+                <p class="text-2xl font-bold">₹1,366 <span class="text-sm font-normal text-slate-500">/ night</span></p>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Location</p>
+                <p class="font-semibold">Patilwada, Manchar</p>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Next Availability</p>
+                <p class="font-semibold text-veg-green">Sat, Apr 11</p>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="flex space-x-1 text-yellow-400">
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-slate-300"></i>
+                    <span class="text-slate-900 font-bold ml-2">4.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dining Section -->
+    <section id="restaurant" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-veg-green font-bold uppercase tracking-widest text-sm">Fine Dining</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8 leading-tight">Pure Veg Restaurant <br>with a Legacy.</h2>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        At Samadhan Restaurant, we believe in the purity of taste. Our chefs prepare authentic Maharashtrian, Punjabi, and Chinese cuisines using only the freshest vegetarian ingredients.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check" class="text-veg-green bg-green-50 p-1 rounded-full w-6 h-6"></i>
+                            <span>Hygienic Kitchen Standards</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check" class="text-veg-green bg-green-50 p-1 rounded-full w-6 h-6"></i>
+                            <span>Separate Family Dining Area</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-slate-700">
+                            <i data-lucide="check" class="text-veg-green bg-green-50 p-1 rounded-full w-6 h-6"></i>
+                            <span>Famous for Maharashtrian Thali</span>
+                        </li>
+                    </ul>
+                    <a href="https://newsamadhan.in" target="_blank" class="inline-flex items-center space-x-2 border-2 border-veg-green text-veg-green px-8 py-3 rounded font-bold hover:bg-veg-green hover:text-white transition">
+                        <span>View Digital Menu</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" class="rounded-xl shadow-lg mt-12">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&q=80&w=600" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations -->
+    <section id="rooms" class="bg-slate-100 py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Comfortable Lodging</h2>
+            <div class="h-1 w-24 bg-saffron mx-auto rounded-full"></div>
+            <p class="mt-6 text-slate-500 max-w-xl mx-auto">Modern rooms designed for highway travellers, families, and business visitors in Manchar.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+            <!-- Standard Room -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md flex flex-col sm:flex-row border border-slate-200 group">
+                <div class="sm:w-1/2 h-64 sm:h-auto overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="sm:w-1/2 p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Standard AC Room</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Perfect for short stays. Equipped with clean linens and modern bathroom fixtures.</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">₹1,366 <span class="text-xs text-slate-400">/ night</span></span>
+                        <a href="https://www.easemytrip.com" target="_blank" class="text-veg-green font-bold underline">Book</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deluxe Room -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md flex flex-col sm:flex-row border border-slate-200 group">
+                <div class="sm:w-1/2 h-64 sm:h-auto overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="sm:w-1/2 p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Deluxe Family Room</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Spacious rooms designed for families with extra seating and amenities.</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">₹1,850 <span class="text-xs text-slate-400">/ night</span></span>
+                        <button class="text-veg-green font-bold underline">Reserve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities -->
+    <section id="amenities" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+            <div class="lg:w-1/2 grid grid-cols-2 gap-6">
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 flex flex-col items-center text-center hover:shadow-lg transition">
+                    <i data-lucide="dumbbell" class="w-10 h-10 mb-4 text-saffron"></i>
+                    <p class="font-bold">Fitness Centre</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 flex flex-col items-center text-center hover:shadow-lg transition">
+                    <i data-lucide="waves" class="w-10 h-10 mb-4 text-blue-400"></i>
+                    <p class="font-bold">Swimming Pool</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 flex flex-col items-center text-center hover:shadow-lg transition">
+                    <i data-lucide="wifi" class="w-10 h-10 mb-4 text-veg-green"></i>
+                    <p class="font-bold">Free Wi-Fi</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50 flex flex-col items-center text-center hover:shadow-lg transition">
+                    <i data-lucide="truck" class="w-10 h-10 mb-4 text-slate-600"></i>
+                    <p class="font-bold">Free Parking</p>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">More than just a <span class="text-saffron italic">pitstop.</span></h2>
+                <p class="text-slate-600 text-lg mb-10 leading-relaxed">
+                    We offer a complete suite of services to ensure your road trip is refreshing. From laundry service for long-haul travellers to a fitness centre to stretch your legs, we've thought of everything.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4 p-4 bg-slate-50 rounded-lg">
+                        <i data-lucide="clock" class="text-veg-green"></i>
+                        <span class="font-semibold text-slate-700">24/7 Room Service & Reception</span>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 bg-slate-50 rounded-lg">
+                        <i data-lucide="shirt" class="text-veg-green"></i>
+                        <span class="font-semibold text-slate-700">Professional Laundry Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-24 px-6 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl font-bold mb-8">Visit Us in Manchar</h2>
+                <p class="text-slate-400 mb-12 text-lg">Located conveniently on the Pune-Nashik Highway, opposite the Bank of Maharashtra in Patilwada.</p>
+                
+                <div class="space-y-10">
+                    <div class="flex items-start space-x-6">
+                        <div class="bg-white/10 p-4 rounded-lg"><i data-lucide="map-pin" class="text-saffron"></i></div>
+                        <div>
+                            <p class="font-bold text-xl">Address</p>
+                            <p class="text-slate-400">Pune - Nashik Hwy, Patilwada, Manchar,<br>Maharashtra 410503</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <div class="bg-white/10 p-4 rounded-lg"><i data-lucide="calendar" class="text-saffron"></i></div>
+                        <div>
+                            <p class="font-bold text-xl">Operating Hours</p>
+                            <p class="text-slate-400">Restaurant: 7:00 AM - 11:30 PM<br>Lodge: 24/7 Front Desk</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 flex space-x-4">
+                    <a href="https://newsamadhan.in" class="bg-white text-slate-900 px-6 py-3 rounded font-bold hover:bg-saffron hover:text-white transition">Visit Official Website</a>
+                    <a href="#" class="bg-white/10 text-white px-6 py-3 rounded font-bold hover:bg-white/20 transition">Get Directions</a>
+                </div>
+            </div>
+            
+            <div class="bg-white text-slate-900 p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-veg-green/10 -mr-10 -mt-10 rounded-full"></div>
+                <h3 class="text-2xl font-bold mb-6">Reservation Inquiry</h3>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" class="w-full bg-slate-100 p-4 rounded-lg outline-none border border-transparent focus:border-veg-green transition">
+                        <input type="text" placeholder="Last Name" class="w-full bg-slate-100 p-4 rounded-lg outline-none border border-transparent focus:border-veg-green transition">
+                    </div>
+                    <input type="email" placeholder="Email Address" class="w-full bg-slate-100 p-4 rounded-lg outline-none border border-transparent focus:border-veg-green transition">
+                    <input type="tel" placeholder="Phone Number" class="w-full bg-slate-100 p-4 rounded-lg outline-none border border-transparent focus:border-veg-green transition">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold text-slate-400 px-1">Check In</label>
+                            <input type="date" value="2026-04-11" class="w-full bg-slate-100 p-4 rounded-lg outline-none border border-transparent focus:border-veg-green transition">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold text-slate-400 px-1">Check Out</label>
+                            <input type="date" value="2026-04-12" class="w-full bg-slate-100 p-4 rounded-lg outline-none border border-transparent focus:border-veg-green transition">
+                        </div>
+                    </div>
+                    <button class="w-full bg-veg-green text-white py-4 rounded-lg font-bold hover:bg-green-900 transition mt-4">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                <i data-lucide="leaf" class="text-veg-green w-5 h-5"></i>
+                <span class="text-white font-bold tracking-tight">NEW SAMADHAN</span>
+            </div>
+            <div class="flex space-x-8 mb-6 md:mb-0">
+                <a href="#" class="hover:text-white transition">Menu</a>
+                <a href="#" class="hover:text-white transition">Rooms</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Privacy</a>
+            </div>
+            <div>
+                &copy; 2026 Hotel New Samadhan. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Interaction
+        const nav = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 80) {
+                nav.classList.add('py-2', 'bg-white');
+                nav.classList.remove('py-4', 'bg-white/90');
+            } else {
+                nav.classList.remove('py-2', 'bg-white');
+                nav.classList.add('py-4', 'bg-white/90');
+            }
+        };
+
+        // Scroll Observer for Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section, .animate-on-scroll').forEach(el => {
+            if(el.id !== 'home') observer.observe(el);
+        });
+    </script>
+</body>
+</html>

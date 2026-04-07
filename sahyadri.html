@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sahyadri | Authentic Pure Veg Restaurant, Rajgurunagar</title>
+    <meta name="description" content="Savor authentic Pure Veg Maharashtrian cuisine at Hotel Sahyadri, Rajgurunagar. Open 24 hours on Pune-Nashik Hwy. Famous for Veg Maratha, Misal Pao, and Malai Dudh.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Lora', serif; }
+        h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
+        
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sahyadri-orange { color: #F26419; }
+        .bg-sahyadri-orange { background-color: #F26419; }
+        .sahyadri-green { color: #33658A; } /* Changed to a rich contrasting slate green/blue */
+        .bg-sahyadri-green { background-color: #33658A; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal { animation: fadeInUp 0.8s ease-out forwards; }
+        
+        .card-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 px-6 py-4 bg-white/95 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-sahyadri-orange rounded-lg flex items-center justify-center transform rotate-3">
+                    <i data-lucide="utensils" class="text-white w-6 h-6"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold leading-none tracking-tight">SAHYADRI</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-semibold sahyadri-green">Pure Veg Restaurant</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wider">
+                <a href="#home" class="hover:sahyadri-orange transition">Home</a>
+                <a href="#menu" class="hover:sahyadri-orange transition">Our Menu</a>
+                <a href="#experience" class="hover:sahyadri-orange transition">The Vibe</a>
+                <a href="#contact" class="hover:sahyadri-orange transition">Find Us</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="hidden lg:flex flex-col items-end mr-4">
+                    <span class="text-[10px] font-bold text-stone-400 uppercase">Open 24 Hours</span>
+                    <a href="tel:08087449289" class="text-sm font-bold">080874 49289</a>
+                </div>
+                <a href="https://hotelsahyadripureveg.in" target="_blank" class="bg-sahyadri-green text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition flex items-center space-x-2 shadow-lg">
+                    <span>Order Online</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="reveal max-w-4xl text-white z-10">
+            <div class="flex justify-center mb-8 mt-16">
+                <div class="bg-white/10 backdrop-blur-md border border-white/30 px-5 py-2 rounded-full text-xs font-bold tracking-[0.3em] uppercase shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
+                    Pune-Nashik Highway Landmark
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-[5.5rem] font-bold mb-6 leading-[1.1] drop-shadow-xl">Traditional Taste, <br><span class="sahyadri-orange italic font-display">Serene Environment.</span></h1>
+            <p class="text-lg md:text-2xl text-stone-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
+                Aakash Thali experts. Fresh air, farm views, and the best Misal-Pao on the highway. We're open 24/7 to serve your cravings.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#menu" class="bg-sahyadri-orange text-white px-10 py-4 rounded-full font-bold hover:scale-105 hover:shadow-[0_8px_20px_rgba(242,100,25,0.4)] transition-all duration-300 shadow-xl text-lg">Explore Menu</a>
+                <a href="#contact" class="bg-white text-stone-900 px-10 py-4 rounded-full font-bold hover:bg-stone-50 hover:-translate-y-1 transition-all duration-300 shadow-xl text-lg">Get Directions</a>
+            </div>
+        </div>
+        
+        <!-- Status Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-3 text-white/80">
+            <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+            <span class="text-sm font-semibold uppercase tracking-widest">Live: Open 24 Hours</span>
+        </div>
+    </section>
+
+    <!-- Highlights Bar -->
+    <div class="bg-white border-b border-stone-200 py-8 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <p class="text-2xl font-bold text-stone-800">1,634+</p>
+                <p class="text-xs uppercase font-bold text-stone-400 tracking-widest">Happy Reviews</p>
+            </div>
+            <div class="text-center">
+                <p class="text-2xl font-bold text-stone-800">₹1–200</p>
+                <p class="text-xs uppercase font-bold text-stone-400 tracking-widest">Per Person</p>
+            </div>
+            <div class="text-center">
+                <p class="text-2xl font-bold text-stone-800">24/7</p>
+                <p class="text-xs uppercase font-bold text-stone-400 tracking-widest">Always Serving</p>
+            </div>
+            <div class="text-center">
+                <p class="text-2xl font-bold text-stone-800">Ample</p>
+                <p class="text-xs uppercase font-bold text-stone-400 tracking-widest">Parking Space</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Menu -->
+    <section id="menu" class="py-24 px-6 bg-stone-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="sahyadri-green font-bold uppercase tracking-widest text-sm">Customer Favorites</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-2">The Sahyadri Specials</h2>
+                </div>
+                <a href="https://hotelsahyadripureveg.in" class="text-sahyadri-orange font-bold border-b-2 border-sahyadri-orange pb-1 hover:text-stone-900 transition">View Full Digital Menu</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dish 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute bottom-4 left-4 bg-sahyadri-orange text-white px-3 py-1 rounded-full text-xs font-bold">POPULAR</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Veg Maratha</h3>
+                            <span class="font-bold sahyadri-green">₹180</span>
+                        </div>
+                        <p class="text-stone-500 text-sm mb-4">Deep fried veg balls in spicy brown Maharashtrian gravy.</p>
+                        <div class="flex items-center space-x-2 text-xs text-stone-400 font-bold uppercase tracking-tighter">
+                            <span>Main Course</span>
+                            <span>•</span>
+                            <span>Spicy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute bottom-4 left-4 bg-sahyadri-green text-white px-3 py-1 rounded-full text-xs font-bold">MUST TRY</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Misal Pao</h3>
+                            <span class="font-bold sahyadri-green">₹80</span>
+                        </div>
+                        <p class="text-stone-500 text-sm mb-4">The ultimate Maharashtrian breakfast. Spicy, crunchy, and fresh.</p>
+                        <div class="flex items-center space-x-2 text-xs text-stone-400 font-bold uppercase tracking-tighter">
+                            <span>Breakfast</span>
+                            <span>•</span>
+                            <span>Morning Special</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Special Malai Dudh</h3>
+                            <span class="font-bold sahyadri-green">₹40</span>
+                        </div>
+                        <p class="text-stone-500 text-sm mb-4">Hot thick milk with cream and saffron. Perfect highway fuel.</p>
+                        <div class="flex items-center space-x-2 text-xs text-stone-400 font-bold uppercase tracking-tighter">
+                            <span>Beverage</span>
+                            <span>•</span>
+                            <span>Hot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick List -->
+            <div class="mt-12 p-8 bg-stone-100 rounded-2xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                <div class="font-bold text-sm">Sev Bhaji</div>
+                <div class="font-bold text-sm">Dal Khichdi</div>
+                <div class="font-bold text-sm">Masala Papad</div>
+                <div class="font-bold text-sm">Kaju Masala</div>
+                <div class="font-bold text-sm">Idli Sambar</div>
+                <div class="font-bold text-sm">Veg Manchurian</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=600" class="rounded-2xl shadow-xl mt-12">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" class="rounded-2xl shadow-xl">
+                </div>
+                <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-sahyadri-orange/10 rounded-full blur-3xl"></div>
+            </div>
+            <div>
+                <span class="sahyadri-green font-bold uppercase tracking-widest text-sm">The Sahyadri Vibe</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8 leading-tight">Fresh Air & <br><span class="sahyadri-orange italic">Bountiful Farms.</span></h2>
+                <p class="text-stone-600 text-lg mb-8 leading-relaxed">
+                    Escape the highway dust. Located in Sandbhorwadi, Hotel Sahyadri is surrounded by lush green farms, offering a serene dining experience with 100% fresh air. It’s the perfect spot to stretch your legs and refresh your soul.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-sahyadri-green/10 p-3 rounded-lg"><i data-lucide="parking-circle" class="sahyadri-green"></i></div>
+                        <span class="font-bold">Massive Parking</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-sahyadri-green/10 p-3 rounded-lg"><i data-lucide="shield-check" class="sahyadri-green"></i></div>
+                        <span class="font-bold">Clean Toilets</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-sahyadri-green/10 p-3 rounded-lg"><i data-lucide="truck" class="sahyadri-green"></i></div>
+                        <span class="font-bold">Drive-through</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-sahyadri-green/10 p-3 rounded-lg"><i data-lucide="users" class="sahyadri-green"></i></div>
+                        <span class="font-bold">Family Friendly</span>
+                    </div>
+                </div>
+                
+                <!-- Review Quote -->
+                <div class="border-l-4 border-sahyadri-orange pl-6 py-2 bg-stone-50 italic text-stone-500">
+                    "Possibly one of the best Misal-Pao we ever had. Place is absolutely serene, with bountiful of farms around."
+                    <span class="block mt-2 font-bold text-stone-900 not-italic">— Vijaybahu Joshi (Local Guide)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact -->
+    <section id="contact" class="py-24 px-6 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8">Stop By Anytime.</h2>
+                    <p class="text-stone-400 mb-12 text-lg">We are conveniently located on the Pune - Nashik Highway in Rajgurunagar. Open 24/7 for travelers and food lovers.</p>
+                    
+                    <div class="space-y-10">
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-white/10 p-4 rounded-xl"><i data-lucide="map-pin" class="sahyadri-orange"></i></div>
+                            <div>
+                                <p class="font-bold text-xl">Our Location</p>
+                                <p class="text-stone-400">Pune - Nashik Highway, Rajgurunagar,<br>Sandbhorwadi, Maharashtra 410505</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-white/10 p-4 rounded-xl"><i data-lucide="clock" class="sahyadri-orange"></i></div>
+                            <div>
+                                <p class="font-bold text-xl">Service Hours</p>
+                                <p class="text-stone-400">Open 24 Hours, 7 Days a Week</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 flex flex-wrap gap-4">
+                        <a href="tel:08087449289" class="bg-sahyadri-orange text-white px-8 py-4 rounded-full font-bold hover:bg-opacity-90 transition">Call Reception</a>
+                        <a href="https://www.google.com/maps" target="_blank" class="bg-white/10 text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 transition flex items-center space-x-2">
+                            <i data-lucide="navigation" class="w-4 h-4"></i>
+                            <span>Get Directions</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mock Map / Visual -->
+                <div class="relative">
+                    <div class="bg-stone-800 h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl border border-stone-700 relative">
+                        <!-- Simulated Map Elements -->
+                        <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="bg-sahyadri-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce">
+                                    <i data-lucide="map-pin" class="text-white w-8 h-8"></i>
+                                </div>
+                                <p class="font-bold">Sahyadri Pure Veg</p>
+                                <p class="text-xs text-stone-400">Rajgurunagar (Sandbhorwadi)</p>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6 bg-stone-900/90 backdrop-blur p-4 rounded-xl text-sm">
+                            <div class="flex justify-between items-center">
+                                <span><i data-lucide="info" class="w-4 h-4 inline mr-2 text-sahyadri-green"></i> LGBTQ+ Friendly Space</span>
+                                <span class="text-sahyadri-green font-bold">LIVE: NOT BUSY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 py-12 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-stone-500 text-sm">
+            <div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+                <div class="flex items-center space-x-2 text-white font-bold text-xl tracking-tight">
+                    <div class="w-6 h-6 bg-sahyadri-orange rounded flex items-center justify-center">
+                        <i data-lucide="utensils" class="w-4 h-4 text-white"></i>
+                    </div>
+                    <span>SAHYADRI</span>
+                </div>
+                <p class="mt-2">The Authentic Highway Taste.</p>
+            </div>
+            <div class="flex space-x-10 mb-6 md:mb-0 uppercase tracking-widest font-bold text-[10px]">
+                <a href="#home" class="hover:text-white transition">Home</a>
+                <a href="#menu" class="hover:text-white transition">Menu</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="p-2 border border-stone-800 rounded-lg hover:bg-sahyadri-orange hover:text-white transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                <a href="#" class="p-2 border border-stone-800 rounded-lg hover:bg-sahyadri-orange hover:text-white transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-[10px] text-stone-600 uppercase tracking-widest">
+            &copy; 2026 Hotel Sahyadri Pure Veg Restaurant. Rajgurunagar, Maharashtra.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Logic
+        const nav = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 80) {
+                nav.classList.add('py-2', 'shadow-lg');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('py-2', 'shadow-lg');
+                nav.classList.add('py-4');
+            }
+        };
+
+        // Reveal Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => {
+            if(s.id !== 'home') {
+                s.style.opacity = '0';
+                observer.observe(s);
+            }
+        });
+    </script>
+</body>
+</html>

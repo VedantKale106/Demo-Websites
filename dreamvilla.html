@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Villa | Your Peaceful Resort Escape in Jaidwadi, Pune</title>
+    <meta name="description" content="Escape to Dream Villa Resort on NH60, Pune. 4.6-star rated resort stay starting at ₹2,008. Perfect for weekend getaways and nature lovers.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Lora', serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nature-accent { color: #4F6F52; }
+        .bg-nature { background-color: #4F6F52; }
+        .border-nature { border-color: #4F6F52; }
+        .bg-cream { background-color: #F8F4F0; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal { animation: slideUp 0.8s ease-out forwards; }
+        
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-white text-stone-800 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 px-6 py-4" id="navbar">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="palmtree" class="nature-accent w-8 h-8"></i>
+                <span class="text-2xl font-serif font-bold tracking-tight">DREAM <span class="nature-accent">VILLA</span></span>
+            </div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide">
+                <a href="#home" class="hover:nature-accent transition">The Resort</a>
+                <a href="#experience" class="hover:nature-accent transition">Experience</a>
+                <a href="#rooms" class="hover:nature-accent transition">Stay</a>
+                <a href="#contact" class="hover:nature-accent transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:08007007367" class="hidden sm:block text-sm font-bold nature-accent">080070 07367</a>
+                <a href="#rooms" class="bg-nature text-white px-6 py-2.5 rounded-sm text-sm font-semibold hover:bg-opacity-90 transition shadow-lg">
+                    Check Availability
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-start px-6 md:px-20 relative">
+        <div class="reveal max-w-3xl text-white">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded text-xs font-bold tracking-[0.2em] uppercase">4.6 Rated Resort</span>
+            </div>
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 leading-[1.1]">Where dreams meet <span class="italic font-normal">serenity.</span></h1>
+            <p class="text-xl text-stone-100 mb-10 max-w-xl leading-relaxed opacity-90 font-light">
+                Discover a hidden sanctuary in Jaidwadi. Surrounded by the tranquility of Pune's landscape, we offer the perfect blend of villa luxury and rustic charm.
+            </p>
+            <div class="flex flex-wrap gap-5">
+                <a href="#rooms" class="bg-white text-stone-900 px-10 py-4 rounded-sm font-bold hover:bg-nature hover:text-white transition-all duration-300">Explore Stay</a>
+                <a href="#experience" class="border-2 border-white/30 backdrop-blur-sm text-white px-10 py-4 rounded-sm font-bold hover:bg-white/10 transition">Our Story</a>
+            </div>
+        </div>
+        
+        <!-- Stats Overlay -->
+        <div class="absolute bottom-10 right-10 hidden xl:flex space-x-12 text-white/80 border-l border-white/20 pl-12 py-4">
+            <div>
+                <p class="text-3xl font-serif font-bold text-white">4.6</p>
+                <p class="text-xs uppercase tracking-widest">Guest Rating</p>
+            </div>
+            <div>
+                <p class="text-3xl font-serif font-bold text-white">100%</p>
+                <p class="text-xs uppercase tracking-widest">Peace Guaranteed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <div class="bg-cream border-b border-stone-200 py-6 px-6">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-6">
+            <div class="flex items-center space-x-4">
+                <i data-lucide="map-pin" class="nature-accent w-5 h-5"></i>
+                <span class="text-sm font-medium">NH60, Jaidwadi, Pune, Maharashtra 410505</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <span class="text-[10px] uppercase font-bold text-stone-400">Check-in</span>
+                    <span class="text-sm font-bold">2:00 PM</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-[10px] uppercase font-bold text-stone-400">Check-out</span>
+                    <span class="text-sm font-bold">12:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resort Experience -->
+    <section id="experience" class="py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1000" alt="Resort Pool" class="w-full h-full object-cover hover:scale-105 transition duration-1000">
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-48 h-48 bg-nature/10 rounded-full -z-10 animate-pulse"></div>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Unwind in the lap of <span class="nature-accent italic">Nature's Best.</span></h2>
+                    <p class="text-stone-600 text-lg mb-8 leading-relaxed">
+                        Dream Villa is more than just a resort hotel; it's a breath of fresh air. Situated off the NH60, our villas provide the privacy you crave with the service you deserve. Whether it's a family reunion or a quiet solo retreat, our doors are open to your peace of mind.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mb-10">
+                        <div class="space-y-3">
+                            <i data-lucide="utensils-crosses" class="nature-accent w-6 h-6"></i>
+                            <h4 class="font-bold">Organic Dining</h4>
+                            <p class="text-sm text-stone-500">Farm-to-table experiences with local Maharashtrian flavors.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <i data-lucide="waves" class="nature-accent w-6 h-6"></i>
+                            <h4 class="font-bold">Sparkling Pool</h4>
+                            <p class="text-sm text-stone-500">Take a dip under the clear sky of Pacharnewadi.</p>
+                        </div>
+                    </div>
+                    <a href="#rooms" class="inline-flex items-center space-x-2 nature-accent font-bold group">
+                        <span>View our Gallery</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-2 transition"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms & Pricing -->
+    <section id="rooms" class="bg-stone-50 py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-xs uppercase tracking-[0.3em] font-bold text-stone-400">Accommodations</span>
+            <h2 class="text-4xl font-bold mt-4">Luxury Within Reach</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Room 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold nature-accent">MOST POPULAR</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Garden Villa Room</h3>
+                    <p class="text-stone-500 text-sm mb-6">Wake up to the sounds of birds and the smell of fresh dew.</p>
+                    <div class="flex justify-between items-center pt-6 border-t border-stone-100">
+                        <div>
+                            <span class="text-2xl font-bold">₹2,008</span>
+                            <span class="text-stone-400 text-xs uppercase">/ Night</span>
+                        </div>
+                        <a href="https://www.makemytrip.com" target="_blank" class="text-sm font-bold underline nature-accent hover:text-black">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Poolside Suite</h3>
+                    <p class="text-stone-500 text-sm mb-6">Direct access to the resort pool and private lounge chairs.</p>
+                    <div class="flex justify-between items-center pt-6 border-t border-stone-100">
+                        <div>
+                            <span class="text-2xl font-bold">₹3,450</span>
+                            <span class="text-stone-400 text-xs uppercase">/ Night</span>
+                        </div>
+                        <button class="text-sm font-bold underline nature-accent">Select Room</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Family Cottage</h3>
+                    <p class="text-stone-500 text-sm mb-6">Two interconnected rooms with a private porch for family bonding.</p>
+                    <div class="flex justify-between items-center pt-6 border-t border-stone-100">
+                        <div>
+                            <span class="text-2xl font-bold">₹5,200</span>
+                            <span class="text-stone-400 text-xs uppercase">/ Night</span>
+                        </div>
+                        <button class="text-sm font-bold underline nature-accent">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Grid -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">Everything you need for a <span class="nature-accent">perfect stay.</span></h2>
+                <p class="text-stone-600 mb-8">We prioritize your comfort with a curated list of amenities designed to make your stay hassle-free.</p>
+                <div class="grid grid-cols-2 gap-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-stone-50 p-2 rounded-full"><i data-lucide="wifi" class="nature-accent w-4 h-4"></i></div>
+                        <span class="text-sm font-medium">High-speed Wi-Fi</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-stone-50 p-2 rounded-full"><i data-lucide="coffee" class="nature-accent w-4 h-4"></i></div>
+                        <span class="text-sm font-medium">Complimentary Breakfast</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-stone-50 p-2 rounded-full"><i data-lucide="car" class="nature-accent w-4 h-4"></i></div>
+                        <span class="text-sm font-medium">Safe Parking</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-stone-50 p-2 rounded-full"><i data-lucide="sparkles" class="nature-accent w-4 h-4"></i></div>
+                        <span class="text-sm font-medium">Housekeeping</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1544161515-4ae6ce6ca8bf?auto=format&fit=crop&q=80&w=400" class="rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=400" class="mt-8 rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="bg-cream py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">Visit Dream Villa</h2>
+                    <p class="text-stone-600 mb-10">We are conveniently located on the NH60, making us an easy drive from Pune city for your weekend getaway.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <i data-lucide="phone-call" class="nature-accent"></i>
+                            <span class="font-bold text-xl">080070 07367</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i data-lucide="map" class="nature-accent"></i>
+                            <span class="text-stone-700">NH60, Jaidwadi, Pune, Maharashtra 410505</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-stone-400 mb-4">Follow our journey</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 border border-stone-300 rounded-full flex items-center justify-center hover:bg-nature hover:text-white transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 border border-stone-300 rounded-full flex items-center justify-center hover:bg-nature hover:text-white transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4">
+                        <i data-lucide="send" class="w-12 h-12 nature-accent opacity-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6">Drop a Message</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full bg-stone-50 p-4 rounded-lg outline-none border border-transparent focus:border-nature transition">
+                        <input type="email" placeholder="Email Address" class="w-full bg-stone-50 p-4 rounded-lg outline-none border border-transparent focus:border-nature transition">
+                        <textarea rows="4" placeholder="How can we help?" class="w-full bg-stone-50 p-4 rounded-lg outline-none border border-transparent focus:border-nature transition"></textarea>
+                        <button class="w-full bg-nature text-white py-4 rounded-lg font-bold hover:bg-opacity-90 transition">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-500 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+            <div class="flex items-center space-x-2 text-white font-serif font-bold text-xl mb-6 md:mb-0">
+                <i data-lucide="palmtree" class="nature-accent w-6 h-6"></i>
+                <span>DREAM <span class="nature-accent">VILLA</span></span>
+            </div>
+            <div class="flex space-x-10 mb-6 md:mb-0">
+                <a href="#" class="hover:text-white transition">Gallery</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Privacy</a>
+            </div>
+            <div>
+                &copy; 2026 Dream Villa Resort. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Logic
+        const nav = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-glass', 'shadow-md', 'py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('nav-glass', 'shadow-md', 'py-2');
+                nav.classList.add('py-4');
+            }
+        };
+
+        // Scroll Reveal Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => {
+            if(s.id !== 'home') s.style.opacity = '0';
+            observer.observe(s);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Pure Veg Restaurant | Best Vegetarian Food in Waki BK, Maharashtra</title>
+    <meta name="description" content="Vedant Pure Veg Restaurant offers authentic vegetarian delights on Pune-Nashik Hwy. Famous for Rava Masala Dosa, Misal Pav, and quick, polite service.">
+    <meta name="keywords" content="Vedant Pure Veg, Vegetarian Restaurant Waki BK, Pune Nashik Highway Food, Best Dosa Pune, Misal Pav Maharashtra">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Lora', serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .text-gold { color: #C5A059; }
+        .bg-forest { background-color: #1B4332; }
+        .border-gold { border-color: #C5A059; }
+        
+        /* Smooth hover for menu cards */
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex flex-col">
+                    <span class="text-2xl font-bold text-forest leading-tight">VEDANT</span>
+                    <span class="text-xs tracking-widest text-gold font-semibold uppercase">Pure Veg Restaurant</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-gold transition">Home</a>
+                    <a href="#about" class="hover:text-gold transition">About</a>
+                    <a href="#menu" class="hover:text-gold transition">Menu</a>
+                    <a href="#reviews" class="hover:text-gold transition">Reviews</a>
+                    <a href="#contact" class="hover:text-gold transition">Contact</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-forest focus:outline-none">
+                        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 space-y-4 shadow-xl">
+            <a href="#home" class="mobile-menu-link block text-lg font-semibold py-2 border-b">Home</a>
+            <a href="#about" class="mobile-menu-link block text-lg font-semibold py-2 border-b">About</a>
+            <a href="#menu" class="mobile-menu-link block text-lg font-semibold py-2 border-b">Menu</a>
+            <a href="#reviews" class="mobile-menu-link block text-lg font-semibold py-2 border-b">Reviews</a>
+            <a href="#contact" class="mobile-menu-link block text-lg font-semibold py-2 border-b">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=2000" alt="Delicious Vegetarian Food" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4 mt-[-4rem] md:mt-0" data-aos="fade-up">
+            <p class="text-gold text-sm md:text-base uppercase tracking-[0.2em] md:tracking-[0.3em] font-semibold mb-4">Welcome to Waki BK's Finest</p>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">Vedant Pure Veg<br class="md:hidden"> Restaurant</h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 max-w-2xl mx-auto font-light px-2">Authentic Indian flavors served with love and tradition since years.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-gold hover:bg-yellow-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition text-base md:text-lg">View Menu</a>
+                <a href="tel:09922992006" class="bg-transparent border-2 border-white hover:bg-white hover:text-forest px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition text-base md:text-lg">Call to Order</a>
+            </div>
+        </div>
+        
+        <!-- Floating Features -->
+        <div class="absolute bottom-10 left-0 right-0 z-10 w-full px-4">
+            <div class="max-w-5xl mx-auto flex flex-col md:grid md:grid-cols-3 gap-2 md:gap-8">
+                <div class="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-xl border border-white/20 text-white flex items-center justify-center md:justify-start gap-4">
+                    <i class="fa-solid fa-leaf text-2xl md:text-3xl text-gold"></i>
+                    <div class="text-left"><h4 class="font-bold text-sm md:text-base">100% Pure Veg</h4><p class="text-xs opacity-80 hidden md:block">Strictly vegetarian kitchen</p></div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-xl border border-white/20 text-white flex items-center justify-center md:justify-start gap-4">
+                    <i class="fa-solid fa-truck-fast text-2xl md:text-3xl text-gold"></i>
+                    <div class="text-left"><h4 class="font-bold text-sm md:text-base">Quick Service</h4><p class="text-xs opacity-80 hidden md:block">Fresh food, fast delivery</p></div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-xl border border-white/20 text-white flex items-center justify-center md:justify-start gap-4">
+                    <i class="fa-solid fa-utensils text-2xl md:text-3xl text-gold"></i>
+                    <div class="text-left"><h4 class="font-bold text-sm md:text-base">Family Vibe</h4><p class="text-xs opacity-80 hidden md:block">Ample seating for families</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gold font-bold uppercase tracking-widest">Our Story</span>
+                    <h2 class="text-4xl font-bold mt-2 mb-6">A Vegetarian Delight in the Heart of Waki BK</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Located conveniently on the Pune-Nashik Highway, Vedant Pure Veg Restaurant has become a landmark for travelers and locals alike. We pride ourselves on offering fantastic food quality and authentic flavors that remind you of home.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-gold"></i> Freshly prepared South Indian delicacies</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-gold"></i> Clean and tidy washrooms for travelers</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-gold"></i> Polite staff and humble service</li>
+                    </ul>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df056fb01793?auto=format&fit=crop&q=80&w=1000" alt="Restaurant Interior" class="rounded-2xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-gold/10 rounded-full -z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Our Popular Dishes</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mb-8"></div>
+            <p class="text-gray-600">The most loved items from our kitchen</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Item 1 -->
+            <div class="menu-card bg-white rounded-2xl overflow-hidden transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&q=80&w=800" alt="Rava Masala Dosa" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Rava Masala Dosa</h3>
+                        <span class="text-gold font-bold">Best Seller</span>
+                    </div>
+                    <p class="text-gray-600 text-sm">Crispy semolina crepe filled with spiced potato mash, served with chutney and sambar.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-card bg-white rounded-2xl overflow-hidden transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800" alt="Misal Pav" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Authentic Misal Pav</h3>
+                        <span class="text-gold font-bold">Spicy</span>
+                    </div>
+                    <p class="text-gray-600 text-sm">A spicy curry made of sprouts, topped with farsan, onions, and lemon. Served with soft pav.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-card bg-white rounded-2xl overflow-hidden transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1594179047519-f347310d3322?auto=format&fit=crop&q=80&w=800" alt="Special Tea" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Masala Ginger Tea</h3>
+                        <span class="text-gold font-bold">Refreshing</span>
+                    </div>
+                    <p class="text-gray-600 text-sm">The perfect highway companion. Freshly brewed with ginger and aromatic Indian spices.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <button class="bg-forest text-white px-10 py-3 rounded-lg hover:bg-green-900 transition font-bold shadow-lg">Download Full Menu PDF</button>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 px-4 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="text-left">
+                    <h2 class="text-4xl font-bold mb-4">Guest Experiences</h2>
+                    <p class="text-gray-600">Join over 360+ satisfied customers on Google Maps</p>
+                </div>
+                <div class="mt-4 flex items-center gap-2">
+                    <span class="text-3xl font-bold">4.0</span>
+                    <div class="text-gold">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="text-gray-400">(363 Reviews)</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="p-8 rounded-2xl bg-gray-50 border-t-4 border-gold shadow-sm" data-aos="fade-up">
+                    <div class="flex gap-1 text-gold mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-700 mb-6 leading-relaxed">"Great place, food was very tasty 😋😋 service was very nice. Visited with family, nice food quality."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center font-bold">S</div>
+                        <div>
+                            <p class="font-bold">Sharvari</p>
+                            <p class="text-xs text-gray-500">Google Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="p-8 rounded-2xl bg-gray-50 border-t-4 border-gold shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex gap-1 text-gold mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-700 mb-6 leading-relaxed">"Quite busy restaurant. Food quality is good. Rates are ok. Washrooms are clean and tidy. Quick service provided."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-forest text-white flex items-center justify-center font-bold">SB</div>
+                        <div>
+                            <p class="font-bold">Suraj B</p>
+                            <p class="text-xs text-gray-500">Verified Diner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="p-8 rounded-2xl bg-gray-50 border-t-4 border-gold shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex gap-1 text-gold mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-700 mb-6 leading-relaxed">"Quick service and polite staff made the experience even better. Perfect stop on the Pune-Nashik highway."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-400 text-white flex items-center justify-center font-bold">A</div>
+                        <div>
+                            <p class="font-bold">Anonymous Guest</p>
+                            <p class="text-xs text-gray-500">via Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-20 bg-forest text-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold mb-8">Visit Us Today</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-xl text-gold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <p class="text-gray-300">Pune - Nashik Hwy, Santosh Nagar, Waki BK, Maharashtra 410501</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-xl text-gold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-300">099229 92006</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-xl text-gold">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Opening Hours</h4>
+                                <p class="text-gray-300">Open 24 Hours / 7 Days a Week</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 flex gap-4">
+                        <a href="https://www.google.com/maps/dir//RV2C%2BV8+Waki+BK,+Maharashtra/@18.8475224,73.8507851,15z" target="_blank" class="bg-gold hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-bold transition">Get Directions</a>
+                        <a href="tel:09922992006" class="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-lg font-bold transition">Call Now</a>
+                    </div>
+                </div>
+                
+                <div class="rounded-2xl overflow-hidden h-96 shadow-2xl" data-aos="fade-left">
+                    <!-- Placeholder Map - In real use, an Embed iframe goes here -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2123!2d73.8825!3d18.8475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2790000000000%3A0x0!2zMTjCsDUwJzUxLjAiTiA3M8KwNTInNTcuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        class="w-full h-full border-0 grayscale invert opacity-80" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="text-2xl font-bold tracking-tight mb-2">VEDANT <span class="text-gold text-sm font-light tracking-widest uppercase ml-2">Pure Veg</span></div>
+                <p class="text-gray-500 text-sm">© 2024 Vedant Restaurant. All rights reserved.</p>
+            </div>
+            
+            <div class="flex gap-6 text-xl">
+                <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="text-sm text-gray-500 flex gap-4">
+                <a href="#" class="hover:text-white transition underline">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll shadow for nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
